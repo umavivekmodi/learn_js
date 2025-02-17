@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>print stars</title>
+    <script src="script.js"></script>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        /* text-align: center; */
+        margin: 50px;
+      }
+      #pattern {
+        font-size: 18px;
+        margin-top: 100px;
+        border: 1px solid black;
+        padding: 100px;
+        white-space: pre-line;
+      }
+      input {
+        padding: 5px;
+        width: 200px;
+      }
+      button {
+        padding: 5px 10px;
+        margin: 5px;
+        cursor: pointer;
+      }
+    </style>
+
+    <!-- <script>
+      function print_star() {
+        let rows = document.getElementById("rows").value;
+        // console.log(rows);
+        let new_line = "";
+
+        let item = "*";
+        for (let i = 1; i <= rows; i++) {
+          let val = "";
+          for (let j = 1; j <= i; j++) {
+            val = val + item;
+            // console.log(val);
+          }
+          new_line += val + "\n";
+        }
+
+        document.getElementById("pattern").innerText = new_line;
+      }
+
+      function clearr() {
+        document.getElementById("pattern").innerHTML = "";
+        document.getElementById("rows").value = "";
+      }
+    </script> -->
+  </head>
+  <body>
+    <div id="result">
+      <input
+        type="text"
+        id="rows"
+        class="rows"
+        placeholder="enter the number of rows"
+      />
+      <button type="submit" id="submit" onclick="print_star()">submit</button>
+      <button id="clear" onclick="clearr()">clear</button>
+      <div id="pattern"></div>
+    </div>
+  </body>
+</html>
