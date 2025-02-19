@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>game tic-tac-to</title>
+    <link rel="stylesheet" href="style_game.css" />
+    <script src="script_game.js"></script>
+  </head>
+  <body>
+    <div class="tictac-toe">
+      <div class="game">
+        <div class="tac" id="box1">
+          <div class="result">1</div>
+          <div id="show1"></div>
+        </div>
+        <div class="tac" id="box2">
+          <div class="result">2</div>
+          <div id="show2"></div>
+        </div>
+        <div class="tac" id="box3">
+          <div class="result">3</div>
+          <div id="show3"></div>
+        </div>
+      </div>
+      <div class="game">
+        <div class="tac" id="box4">
+          <div class="result">4</div>
+          <div id="show4"></div>
+        </div>
+        <div class="tac" id="box5">
+          <div class="result">5</div>
+          <div id="show5"></div>
+        </div>
+        <div class="tac" id="box6">
+          <div class="result">6</div>
+          <div id="show6"></div>
+        </div>
+      </div>
+      <div class="game">
+        <div class="tac" id="box7">
+          <div class="result">7</div>
+          <div id="show7"></div>
+        </div>
+        <div class="tac" id="box8">
+          <div class="result">8</div>
+          <div id="show8"></div>
+        </div>
+        <div class="tac" id="box9">
+          <div class="result">9</div>
+          <div id="show9"></div>
+        </div>
+      </div>
+
+      <div class="form">
+        <label for="number"></label>
+        <input
+          type="number"
+          id="number"
+          value="enter the number"
+          placeholder="Enter box number"
+          min="1"
+          max="9"
+          required
+        /><br />
+        <!-- <input type="text" value="X" id="done" /> -->
+
+        <div class="btn">
+          <button id="btn1" onclick="clickX()">X</button>
+          <button id="btn2" onclick="clickO()" disabled>O</button>
+
+          <!-- <button onclick="chance()">submit</button> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
