@@ -1,0 +1,88 @@
+
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .game {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 600px;
+        margin-right: 600px;
+      }
+
+      form {
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+      }
+
+      input {
+        width: 300px;
+
+      }
+      .form > input {
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        outline: none;
+        margin-left: 600px;
+      }
+
+
+      .tac {
+        border: 1px solid black;
+        padding: 40px;
+        margin: 5px;
+        width: 50px;
+        height: 30px;
+      }
+
+      #show1, #show2,#show3,#show4,#show5,
+      #show6,#show7,#show8,#show9{
+        text-align: center;
+        margin-top: 25px; 
+      }
+      .btn {
+        display: flex;
+        gap: 80px;
+        margin-top: 10px;
+        margin-left: 200px;
+        height: 50px;
+        margin-left: 600px;
+      }
+
+      .btn button {
+        width: 100px;
+        border-radius: 8px;
+      }
+      /* .btn #btn1{
+           background-color: pink;
+           border-radius: 5px;
+           width: 100px;
+           height: 50px;
+           margin-top: 5px;
+              
+        }
+
+        .btn #btn2{
+           background-color: pink;
+           border-radius: 5px;
+           width: 100px;
+           height: 50px;
+           margin-top: 5px;
+           
+        } */
+    
+
+        .tac > .result{
+          position: relative;
+          /* background-color: rgb(96, 214, 96); */
+          /* border: 1px solid black; */
+          width: 15px;
+          height: 15px;
+          margin-top:-40px;
+          margin-left:-40px;
+          font-size: 10px;
+          text-align: center;
+        }
