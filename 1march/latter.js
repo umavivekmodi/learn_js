@@ -1,6 +1,6 @@
 function print_star() {
   let rows = document.getElementById("rows").value;
-
+  
   let star = "";
 
   for (let i = 1; i <= rows * rows; ++i) {
@@ -10,14 +10,16 @@ function print_star() {
         !(i == rows * rows && j == rows * rows) &&
         !(i == rows * rows && j == 1)
       ) {
-        star = star + "*&nbsp;&nbsp;";
+        star = star + "*  ";
       } else {
-        star += "&nbsp;&nbsp;&nbsp;";
+        for (k = 0; k < 1; k++) {
+          star += "&nbsp;&nbsp;";
+        }
       }
     }
 
-    star += "\n"; // Move to next line
-    // star += "<br>";
+    // star += "\n"; // Move to next line
+    star += "<br>";
   }
 
   console.log(star);
@@ -51,15 +53,19 @@ function clearr() {
 // }
 // console.log(star);
 
-
-function add(a,b){
-    return a+b;
-    
+function add(a, b) {
+  return a + b;
 }
 console.log(add);
 
-let arr= [0 , "a" , true , () => console.log("hii"),{
-    num : "jay",age:20
-
-}]
+let arr = [
+  0,
+  "a",
+  true,
+  () => console.log("hii"),
+  {
+    num: "jay",
+    age: 20,
+  },
+];
 console.log(arr[3]);
