@@ -10,7 +10,7 @@ function print_star() {
         !(i == rows * rows && j == rows * rows) &&
         !(i == rows * rows && j == 1)
       ) {
-        star = star + "*&nbsp;&nbsp; ";
+        star = star + "*&nbsp;&nbsp;";
       } else {
         star += "&nbsp;&nbsp;&nbsp;";
       }
