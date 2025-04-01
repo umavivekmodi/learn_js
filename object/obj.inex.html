@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+   <script>
+    var second = {
+    A2 : {
+            abhay : 80 , 
+            akash : 95 , 
+            bhaskar : 72,
+            bhavesh : 65,
+            bhotik : 43
+    },
+
+    B2 : {
+        chandani : 67,
+        darshan : 78,
+        dhaval : 87,
+        pankaj : 65,
+        kushagra : 61,
+        shubham : 33,
+        himanshu : 74
+    },
+    C2 : {
+        nimish : 37,
+        sambhav : 49,
+        somil : 84 , 
+        ankit : 85 , 
+        anant : 68,
+        vanraj : 93
+    },
+    D2 : {
+        priya : 91,
+        kritika : 85,
+        uma : 73,
+        ram : 48,
+        munni:59,
+        shila: 63
+    },
+    E2 :{
+        aman: 78,
+        akskau : 95,
+        abdul : 65,
+        waseam : 97,
+        akram : 42,
+        vikaram : 73
+    },
+    F2 : {
+        neel : 47,
+        nitesh:54,
+        mukesh:79,
+        shivaji:99,
+        pushpa:52,
+        ramu : 69
+    }
+}
+
+// console.log(Object.keys.length)
+// console.log(Object.keys(section_second).length)
+
+// console.log(section_second.A2)
+// console.log(section_second.B2)
+// console.log(section_second.C2)
+// console.log(section_second.D2)
+// console.log(section_second.E2)
+// console.log(section_second.F2)
+
+// 
+
+
+let total = 0;
+let count = 0;
+let topper = "";
+let top_mark = 0;
+let lower = "";
+let lessMarks = 1000;
+Object.keys(second).forEach((item)=>{
+    let section_total =0;
+    let section_count = 0;
+    let section_lower = "";
+    let section_lessMarks = 1000;
+    Object.keys(second[item]).forEach((student)=>{
+        let marks = second[item][student]
+        if(top_mark < marks){
+            top_mark = marks;
+            topper = student;
+        }else if(lessMarks >  marks){
+            lessMarks = marks;
+            lower = student;
+            
+        }
+        if(section_lessMarks > marks){
+            section_lessMarks = marks;
+            section_lower = student;
+        }
+        section_total += marks ;
+        section_count++;
+        total += marks;
+        count++;
+    
+    })
+    console.log(section_total/section_count);
+    console.log(` top marks ${top_mark} , topper name :${topper}`)
+    console.log(`each section lowest ${section_lower} with ${section_lessMarks}`)
+    
+  
+
+   
+})
+console.log(`avg marks of 2nd class ${total/count}`);
+console.log(`topper name ${topper} with marks ${top_mark}`);
+console.log(`less marks ${lessMarks} , lower ${lower}`);
+
+
+
+
+
+
+   </script> 
+</body>
+</html>

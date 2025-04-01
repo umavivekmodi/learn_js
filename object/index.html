@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+   <script>
+    var section_second = {
+    A2 : {
+            abhay : 80 , 
+            akash : 95 , 
+            bhaskar : 72,
+            bhavesh : 65,
+            bhotik : 43
+    },
+
+    B2 : {
+        chandani : 67,
+        darshan : 78,
+        dhaval : 87,
+        pankaj : 65,
+        kushagra : 61,
+        shubham : 33,
+        himanshu : 74
+    },
+    C2 : {
+        nimish : 37,
+        sambhav : 49,
+        somil : 84 , 
+        ankit : 85 , 
+        anant : 68,
+        vanraj : 93
+    },
+    D2 : {
+        priya : 91,
+        kritika : 85,
+        uma : 73,
+        ram : 48,
+        munni:59,
+        shila: 63
+    },
+    E2 :{
+        aman: 78,
+        akskau : 95,
+        abdul : 65,
+        waseam : 97,
+        akram : 42,
+        vikaram : 73
+    },
+    F2 : {
+        neel : 47,
+        nitesh:54,
+        mukesh:79,
+        shivaji:99,
+        pushpa:52,
+        ramu : 69
+    }
+}
+
+// console.log(Object.keys.length)
+// console.log(Object.keys(section_second).length)
+
+// console.log(section_second.A2)
+// console.log(section_second.B2)
+// console.log(section_second.C2)
+// console.log(section_second.D2)
+// console.log(section_second.E2)
+// console.log(section_second.F2)
+
+let arrA=  [];
+Object.keys(section_second.A2).forEach((item)=>{
+// console.log(section_second.A2[item])
+
+ arrA.push(section_second.A2[item])
+
+});
+console.log(arrA);
+sum = 0;
+let max = 0;
+for(let i=0;i<arrA.length;i++){
+sum+= arrA[i]
+if(max < arrA[i]){
+    max = arrA[i]
+    // console.log(`max ${max}`)
+}else{
+    console.log(`max value ${max}`)
+}
+}
+console.log(sum)
+console.log(`average A2 ${sum/arrA.length}`);
+ 
+let topperName = Object.keys(section_second.A2).find(key => section_second.A2[key] === max)
+    console.log(topperName)
+ 
+
+
+
+
+let arrB = [];
+Object.keys(section_second.B2).forEach((item)=>{
+    console.log(section_second.B2[item])
+
+    arrB.push(section_second.B2[item])
+})
+console.log(arrB);
+
+let add = 0;
+let max2 = 0;
+for(let i=0 ;i<arrB.length;i++){
+    add += arrB[i];
+    if(max2 < arrB[i]){
+        max2 = arrB[i]
+        console.log(max2)
+    }else{
+
+        console.log(`max2 value ${max2}`)
+    }
+}
+console.log(add)
+console.log(`average B2 ${(add/arrB.length).toFixed(2)}`);
+
+var topperNameB = Object.keys(section_second.B2).find((key )=> section_second.B2[key] === max2 );
+console.log(topperNameB)
+
+
+let arrC = [];
+
+Object.keys(section_second.C2).forEach((item)=>{
+    console.log(section_second.C2[item])
+    arrC.push(section_second.C2[item])
+})
+
+console.log(arrC);
+var max3 = 0;
+var sumC = 0;
+for(let i= 0 ; i < arrC.length;  i++){
+    sumC += arrC[i];
+    if(max3 < arrC[i]){
+        max3 = arrC[i];
+        console.log(max3)
+    }
+    else{
+        console.log(max3)
+    }
+
+}
+console.log(sumC);
+console.log(`average C2 ${(sumC/arrC.length).toFixed(2)}`);
+
+var topperNameC =Object.keys(section_second.C2).find((key)=>section_second.C2[key]===max3)
+console.log(topperNameC)
+
+
+let arrD =[];
+Object.keys(section_second.D2).forEach((item)=>{
+    console.log(section_second.D2[item]);
+    arrD.push(section_second.D2[item]);
+})
+console.log(arrD);
+var max4 = 0;
+let sumD = 0;
+for(let i =0;i<arrD.length;i++){
+    sumD +=arrD[i];
+    if(max4 < arrD[i]){
+        max4 = arrD[i];
+
+    }else{
+        console.log(`max value ${max4}`)
+    }
+
+}
+console.log(sumD);
+console.log(`average D2 ${(sumD/arrD.length).toFixed(2)}`)
+var topperNameD =Object.keys(section_second.D2).find((key)=>section_second.D2[key]===max4)
+console.log(topperNameD);
+
+
+let arrE =[];
+Object.keys(section_second.E2).forEach((item)=>{
+    console.log(section_second.E2[item]);
+    arrE.push(section_second.E2[item])
+})
+console.log(arrE);
+var max5 = 0;
+let sumE =0;
+for(var i=0; i < arrE.length;i++){
+    sumE += arrE[i];
+    if(max5 < arrE[i]){
+        max5 = arrE[i]
+
+    }else{
+        console.log(`max value ${max5}`);
+    }
+}
+console.log(sumE);
+
+console.log(`average E2 ${(sumE/arrE.length).toFixed(2)}`)
+console.log(Object.keys(section_second.E2) ) 
+
+
+
+let arrF =[];
+Object.keys(section_second.F2).forEach((item)=>{
+    console.log(section_second.F2[item]);
+    arrF.push(section_second.F2[item])
+})
+console.log(arrF);
+
+let sumF = 0;
+for(let i=0;i< arrF.length;i++){
+    sumF += arrF[i];
+}
+console.log(sumF)
+console.log(`average ${(sumF/arrF.length).toFixed(2)}`)
+
+
+
+let wholesum = [sum ,add ,sumC ,sumD ,sumE,sumF];
+console.log(wholesum)
+let sums = 0 ;
+for(let i=0; i<wholesum.length;i++ ){
+sums += wholesum[i]
+}
+console.log(sums)
+console.log(`sum of 2nd class numbers ${sums/((arrA.length)+(arrB.length)+(arrC.length)+(arrD.length)+(arrE.length)+(arrF.length))}`)
+
+   </script> 
+</body>
+</html>

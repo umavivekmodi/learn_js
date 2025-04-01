@@ -1,0 +1,55 @@
+<!-- 
+
+
+let classes = [1,2,3,4,5,6,7,8,9,10,11,12];
+sections = ["A","B","C","D"]
+function subjects(class_name){
+    if(class_name===1 && class_name ===2){
+        subjects = ["hindi","english","maths"]
+    } else if(class_name ===3 && class_name ===4 && class_name ==5 && class_name=== 6 &&class_name === 7 && class_name === 8){
+        subjects = ["hindi","english","maths","G.K."]
+    }else if(class_name ===9 && class_name === 10){
+        subjects = ["hindi","english","maths","socialScience" , ""]
+    }
+ return{   hindi: 80,
+    english: 86,
+    maths: 76
+ }
+}
+
+function students(){
+    let student = []
+    for(let i = 1 ; i <= 10 ;i++){
+        student.push(student_detail())
+    }
+    return student;
+}
+function student_detail() {
+   return{ name : "avinash",
+    f_name : "girdhar nath",
+    m_name : "shri nath",
+    Dob : `200${Math.floor(Math.random() * 10)}-0${Math.floor(Math.random() * 9) + 1}-0${Math.floor(Math.random() * 9) + 1}`,
+}
+}
+
+
+let object_data = {
+    school_name : "DPS",
+    estublished_in : 2008,
+    classes : classes.map(classs=>{
+        return {
+            class_name : classs,
+            section_name : sections.map(section=>{
+                return{
+                   section_name : section,
+                   subjects : subjects(classs),
+                   
+                   student_details : students()
+                }
+            })
+            
+        }
+    })
+}
+console.log(JSON.stringify(object_data,0,2))
+object_data() -->
